@@ -1,0 +1,280 @@
+:root{
+    --text-color:#001d26;
+    --link-color:#4348d8;
+    --background-color:#ebebeb;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+    background-color:var(--background-color);
+    max-width: 1400;
+    margin: 0 auto;
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+/* Navbar section */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+    width: 100%;
+    height: 80px;
+    background-color : #85a6af;
+}
+
+nav .left a{
+    color:var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a{
+    color: var(--text-color);
+    margin: 0 15px;
+}
+
+nav .right a span{
+    margin-left: 5px;;
+}
+
+/* Hero section */
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+    margin: 50px 0;
+    background-color: #b1b1c6;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+.hero-section  .text{
+    flex: 5;
+}
+
+.hero-section .text h2{
+    font-size: 45px;    
+}
+
+.hero-section .text .links {
+    margin-top: 25px;
+}
+
+.hero-section .text .links a{
+    display: inline;
+    margin: 5px;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+}
+
+.hero-section .text .links a:hover{
+    color:var(--text-color);
+    border:2px solid var(--text-color);
+}
+
+
+.hero-section .headshot {
+    flex:3;
+    display: flex;
+    justify-content: right;
+}
+
+.hero-section .headshot img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100 px;
+}
+
+.skills-section h2 {
+    font-size: 35 px;
+    text-align: center;
+}
+
+.skills-section .text{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+
+    width: 220px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #001d26;
+    border-radius: 5px;
+
+}
+
+.skills-section .cells .cell img{
+    width: 50px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.skills-section .cells .cell span{
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Project Section */
+.project-section{
+    padding: 0 50px;
+    margin: 50px;
+}
+.project-section h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.project-section .text {
+    font-size: 16px;
+    margin: 10px 220px;
+}
+
+.project-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-section .cells .cell{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+
+    width: 350px;
+    height: auto;
+    padding: 2px;
+    margin: 50px;
+    border: 2px solid #001d26;
+    border-radius: 5px;
+    flex-direction: column;
+    background-color: rgb(160, 160, 160);
+}
+.project-section .cells .cell img{
+    width: 340px;
+    object-fit: contain;
+    /* padding: 10px 50px; */
+    text-align: center;
+    border-radius: 70px;
+    
+}
+.project-section .cells .cell span{
+    font-weight:1000;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+
+.project-section .cells .cell p{
+    font-size: 14px;
+    margin-top: 10px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    height: -6px;
+}
+
+.project-section .cells .cell a{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.project-section .cells .cell a:hover{
+    color: rgb(132, 33, 1);
+}
+
+/* Contact Section */
+.contact-section{
+    padding: 0 50px;
+    margin-bottom : 100px; 
+}
+
+.contact-section h2 {
+    font-size: 35px;
+}
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .text {
+    flex: 3;
+}
+.contact-section form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section form input,
+.contact-section form textarea{
+    font-size: 16px;
+    font-family: "Poppins",sans-serif;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid var(--link-color);
+    border-radius: 10px;
+}
+
+.contact-section form button{
+    font-size: 16px;
+    font-family: "Poppins",sans-serif;
+    background-color: var(--link-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid var(--link-color);
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.contact-section form button:hover{
+    filter: brightness(0.7);
+    
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

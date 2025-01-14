@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar-->
+     <nav>
+        <div class="left">
+            <a href="">My Portfolio</a>
+        </div>
+        <div class="right">
+            <a href="#">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-pen"></i>
+                <span>Projects</span>
+            </a>
+            
+            <a href="#">
+                <i class="fa-solid fa-address-book"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+     </nav> 
+    <!-- Main -->
+     <main>
+        <!-- Hero Section -->
+         <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I am Ashiqur</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Eveniet praesentium quibusdam tempora rem, similique 
+                 doloribus. Quasi qui dolores sequi possimus inventore a,
+                  perspiciatis cupiditate provident perferendis, hic 
+                  consequatur facere quidem!</p>
+
+                <div class="links">
+                    <a href="#" target="blank">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#" target="blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" target="blank">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="headshot">
+                <img src="images\ICCBA1.jpg" alt="Hero headshot">
+            </div>
+        </section>
+
+         <!-- Skills section -->
+        <section class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sapiente amet harum quos velit eligendi laborum, maxime dolorem voluptate veritatis eveniet architecto quas nisi, blanditiis voluptatibus, molestiae iste quis accusantium.
+            </div>
+          
+
+            <div class="cells">
+                <div class="cell">
+                    <img src="images/html.png" alt="html logo">
+                    <span>HTML</span>
+                </div>
+                <div class="cell">
+                    <img src="images/css.png" alt="html logo">
+                    <span>CSS</span>
+                </div>
+                <div class="cell">
+                    <img src="images/python.webp" alt="html logo">
+                    <span>Python</span>
+                </div>
+                <div class="cell">
+                    <img src="images/react.png" alt="html logo">
+                    <span>React JS</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Project Secction -->
+         <section class="project-section">
+            <h2>Projects</h2>
+            <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, cumque quas. Possimus facilis recusandae dicta a deleniti nemo iusto nostrum corporis sint, culpa rem, omnis quo cum. Ipsum, fugit libero!
+            </div>
+
+            <div class="cells">
+                
+                <div class="cell">
+                    <img src="images/hms.jpg" alt="Hospital Management">
+                    <span><p>Hospital Management Software</p></span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi culpa modi asperiores. Rem fugiat odit voluptatem ex, praesentium cumque facilis? Illum ipsam doloremque reiciendis dolorem consectetur culpa accusamus modi consequuntur.</p>
+                    <a href="#" target="blank">Check It Out</a>
+                    
+                </div>
+                <div class="cell">
+                    <img src="images/dr portal.jpg" alt="Hospital Management">
+                    <span> Doctor Portal</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fugiat libero animi quisquam delectus quo cum impedit enim facilis laboriosam quae quos, eveniet vitae magnam praesentium eius minus ad cupiditate.</p>
+                    <a href="#" target="blank">Check It Out</a>
+
+                </div>
+                <div class="cell">
+                    <img src="images/tracking.jpg" alt="Hospital Management">
+                    <span>Vehical Tracking</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odit placeat reprehenderit praesentium non repellat fuga odio consectetur dolorum laboriosam, sunt animi possimus soluta sit natus officiis obcaecati. Tempora, nostrum!</p>
+                    <a href="#" target="blank">Check It Out</a>
+                    
+                </div>
+
+            </div>
+
+         </section>
+
+         <!-- Contact Secction -->
+         <section class="contact-section">
+            <h2>Contact</h2>
+
+            <div class="group">
+                <div class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tenetur natus, aut odit, sunt ratione error officia officiis sapiente explicabo accusantium dolor velit doloribus facilis neque? Perferendis molestias corporis qui?
+                </div>
+
+                <form>
+                    <label for="Name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="email address">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+
+            </div>
+         </section>
+
+         <footer>
+            <p>&copy; 2025 My Portfolio. All Right Reserved</p>
+         </footer>
+     </main>
+</body>
+</html>
